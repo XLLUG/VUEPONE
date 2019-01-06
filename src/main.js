@@ -6,11 +6,12 @@ import router from './router'
 import 'mint-ui/lib/style.css'
 import store from '@/vuex/store'
 // in ES6 modules
-import { Swipe, SwipeItem } from 'mint-ui'
+import { Swipe, SwipeItem,Loadmore } from 'mint-ui'
 
 Vue.config.productionTip = false
 Vue.component('swipe', Swipe)
 Vue.component('swipe-item', SwipeItem)
+Vue.component('loadmore', Loadmore);
 
 /* eslint-disable no-new */
 new Vue({
