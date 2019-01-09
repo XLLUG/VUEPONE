@@ -2,12 +2,12 @@
   <div id="listApp">
     <side></side>
     <content></content>
+    <loadmore :top-method="loadTop" :autoFill="false"  ref="loadmore">
+      <ul>
+        <li v-for="item in list">{{item}}</li>
+      </ul>
+    </loadmore>
   </div>
-  <loadmore :top-method="loadTop" :autoFill="false"  ref="loadmore">
-    <ul>
-      <li v-for="item in list">{{item}}</li>
-    </ul>
-  </loadmore>
 </template>
 
 <script>
