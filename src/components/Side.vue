@@ -14,17 +14,20 @@
     name: "Side",
     data: function () {
       return {}
-    },
-    vuex: {
+    }
+    /*vuex: {
       actions: {
         addItem,
         deleteItem
       }
-    }
+    }*/
 
   }
 </script>
 
 <style scoped>
-
+  .side  li {
+  background-color: aquamarine;
+    margin-bottom: 10px;
+  }
 </style>

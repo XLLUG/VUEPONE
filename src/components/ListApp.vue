@@ -2,34 +2,30 @@
   <div id="listApp">
     <side></side>
     <content></content>
-    <loadmore :top-method="loadTop" :autoFill="false"  ref="loadmore">
-      <ul>
-        <li v-for="item in list">{{item}}</li>
-      </ul>
-    </loadmore>
+    <v_loadmore></v_loadmore>
   </div>
 </template>
 
 <script>
   import Side from './Side'
   import Content from './Content'
+  import v_loadmore from './v-loadmore'
 
   export default {
     name: "ListApp",
     data:function () {
       return{
-        list:[1,2,3]
+
       }
     },
     components: {
       Side,
-      Content
+      Content,
+      v_loadmore
     },
     methods:{
-      loadTop(id){
-        this.list.push(6,7,78)
-        this.$refs.loadmore.onTopLoaded(id);
-      },
+
+
     }
   }
 </script>
