@@ -5,10 +5,10 @@
       <ul class="loadmore">
         <li v-for="item in list">{{item}}</li>
       </ul>
-      <!-- <div slot="top" class="mint-loadmore-top">
+       <div slot="top" class="mint-loadmore-top">
          <span v-show="topStatus !== 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
          <span v-show="topStatus === 'loading'">Loading...</span>
-       </div>-->
+       </div>
     </loadmore>
     <hr/>
     <loadmore :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" ref="loadmore2"
