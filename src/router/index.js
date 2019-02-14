@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import ListApp from '@/components/ListApp'
 import upload from '@/components/upload'
+import demo from '@/components/iframe/demo.vue'
 
 Vue.use(Router)
 var router = new Router({
@@ -11,9 +12,12 @@ var router = new Router({
       path: '/',
       name: 'HelloWorld',
       component: ListApp
-    },{
-      path:'/upload',
-      component:upload
+    }, {
+      path: '/upload',
+      component: upload
+    }, {
+      path: '/demo',
+      component:()=> import('../components/iframe/demo')
     }
   ]
 })
