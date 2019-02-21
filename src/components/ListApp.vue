@@ -1,8 +1,8 @@
 <template>
   <div id="listApp">
     <side></side>
-    <content></content>
-    <v_loadmore></v_loadmore>
+    <Content></Content>
+   <!-- <v_loadmore></v_loadmore>-->
   </div>
 </template>
 

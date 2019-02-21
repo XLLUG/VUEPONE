@@ -21,7 +21,16 @@ const mutations = {
   }
 
 }
+const getters = {
+  getItems(state) {
+    return state.items
+  },
+  getName(){
+    return state.name
+  }
+};
 export default new Vuex.Store({
   state,
-  mutations
+  getters,
+  mutations,
 })

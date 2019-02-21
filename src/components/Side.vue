@@ -1,8 +1,8 @@
 <template>
   <div id="side">
     <ul class="side list-unstyled">
-      <li @click="addItem({content:Math.random()})"> 增加</li>
-      <li @click="deleteItem()"> 删除</li>
+      <li @click="addItem({content:Math.random()})"> <button>增加</button></li>
+      <li @click="deleteItem()">  <button>删除</button></li>
     </ul>
   </div>
 </template>
@@ -14,6 +14,14 @@
     name: "Side",
     data: function () {
       return {}
+    },
+    methods:{
+      addItem({content}){
+        this.$store.commit('ADD_ITEM',content)
+      },
+      deleteItem(){
+        this.$store.commit('DELETE_ITEM')
+      }
     }
     /*vuex: {
       actions: {
