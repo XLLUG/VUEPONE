@@ -2,7 +2,7 @@
   <div id="listApp">
     <side></side>
     <Content></Content>
-   <!-- <v_loadmore></v_loadmore>-->
+    <v_loadmore></v_loadmore>
   </div>
 </template>
 

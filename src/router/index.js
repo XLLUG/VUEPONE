@@ -11,7 +11,7 @@ var router = new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: ListApp
+      component: ()=>import('@/components/Main')
     }, {
       path: '/upload',
       component: upload
